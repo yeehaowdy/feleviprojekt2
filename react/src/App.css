@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #ffffff; 
+  color: #b71c1c;            
 }
 
 .logo {
@@ -12,10 +14,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #ff0000aa); 
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #d32f2faa); 
 }
 
 @keyframes logo-spin {
@@ -38,5 +40,5 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #f44336; 
 }
