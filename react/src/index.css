@@ -1,80 +1,45 @@
 :root {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
-
-  /* Világos téma színei */
   color: #2c3e50;
-  background-color: #f8f9fa;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* Világos szürke háttér a chat kiemeléséhez */
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  background-color: #f8f9fa;
+  width: 100vw;
 }
 
-h1 {
-  font-size: 3rem;
-  line-height: 1.1;
-  color: #b71c1c; /* Mélyvörös */
-  margin-bottom: 0.5em;
-  font-weight: 800;
-}
-
-a {
-  font-weight: 600;
-  color: #d32f2f;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-a:hover {
-  color: #ff5252;
-  text-decoration: underline;
+#root {
+  width: 100%;
+  max-width: 800px; /* Chat ablak szélessége */
+  height: 90vh;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
 }
 
 button {
-  border-radius: 10px;
-  border: 1px solid #d32f2f;
-  padding: 0.7em 1.4em;
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 600;
-  font-family: inherit;
   background-color: #d32f2f;
-  color: #ffffff;
+  color: white;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 6px rgba(211, 47, 47, 0.15);
+  transition: background-color 0.2s;
 }
 
 button:hover {
   background-color: #b71c1c;
-  border-color: #b71c1c;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(183, 28, 28, 0.25);
-}
-
-button:active {
-  transform: translateY(0);
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto rgba(211, 47, 47, 0.3);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
 }
