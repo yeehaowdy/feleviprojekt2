@@ -1,11 +1,11 @@
 :root {
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   font-weight: 400;
 
-  /* Színpaletta */
+  /* Világos téma színei */
   color: #2c3e50;
-  background-color: #fcfcfc;
+  background-color: #f8f9fa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,46 +19,48 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  transition: background-color 0.3s ease;
+  background-color: #f8f9fa;
 }
 
 h1 {
-  font-size: 2.8em;
-  line-height: 1.2;
-  color: #b71c1c;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #b71c1c; /* Mélyvörös */
+  margin-bottom: 0.5em;
+  font-weight: 800;
 }
 
 a {
   font-weight: 600;
   color: #d32f2f;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: all 0.2s ease;
 }
 
 a:hover {
   color: #ff5252;
+  text-decoration: underline;
 }
 
 button {
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid #d32f2f;
-  padding: 0.8em 1.6em;
+  padding: 0.7em 1.4em;
   font-size: 1em;
   font-weight: 600;
   font-family: inherit;
   background-color: #d32f2f;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: all 0.25s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px rgba(211, 47, 47, 0.15);
 }
 
 button:hover {
   background-color: #b71c1c;
   border-color: #b71c1c;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(183, 28, 28, 0.25);
 }
 
 button:active {
@@ -67,5 +69,12 @@ button:active {
 
 button:focus,
 button:focus-visible {
-  outline: 3px auto #ff5252;
+  outline: 4px auto rgba(211, 47, 47, 0.3);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
 }
